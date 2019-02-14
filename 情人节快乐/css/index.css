@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    margin-bottom: 0;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.top{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    text-align: center;
+    z-index: 10;
+    animation-name: arrowing;
+    -webkit-animation-name: arrowing;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes arrowing{
+    0% {
+    transform: translateY(-5px);
+    opacity: 0.8;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-5px);
+        opacity: 0.8;
+    }
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.one{
+    width: 25%;
+    height: 100%;
+    background-color: #f1c1c4;
+}
+
+#first{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#first > .bg1{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+#first > .bg2{
+    width: 50%;
+    position: absolute;
+    bottom: -20%;
+    right: -5%;
+    z-index: 2;
+}
+#first > .bg3{
+    width: 10%;
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+}
+#first > p{
+    font-family:"微软雅黑";
+    color: rgb(224, 30, 54);
+    text-align: center;
+    line-height: 1.8;
+    font-size: 16px;
+    padding-right: 10px;
+    position: absolute;
+    top:30%;
+    z-index: 3;
+}
+
+#second{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#second > .bg1{
+    width: 100%;
+    height: ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+#second > .bg2{
+    width: 100%;
+    height: ;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+#second > .bg3{
+    width: 95%;
+    margin: 0 auto;
+    position: absolute;
+    top: 28%;
+    z-index: 4;
+}
+#second > .bg4{
+    width: 50%;
+    position: absolute;
+    left: 0%;
+    bottom: 2%;
+    z-index: 4;
+}
+#second > .bg5{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    z-index: 5;
+}
+
+#second > p{
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 6;
+}
+#second > .art1{
+    top: 60%;
+}
+#second > .art2{
+    top: 65%;
+}
+#second > .art3{
+    top: 70%;
+}
+
+
+#third{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#third > .bg1{
+    width: 100%;
+    position: absolute;
+    
+    bottom: 5%;
+    z-index: 2;
+}
+
+#third > p{
+    font-family:"微软雅黑";
+    color: black;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 14px;
+    position: absolute;
+    z-index: 3;
+}
+#third > .art1{
+    top: 10%;
+}
+#third > .art2{
+    top: 15%;
+}
+#third > .art2 > span{
+    font-size: 18px;
+    font-weight: 500 ;
+    color: rgb(224, 30, 54);
+}
+#third > .art3{
+    top: 20%;
+}
+#third > .art4{
+    top: 25%;
+}
+#third > .art5{
+    top: 30%;
+}
+#third > .art6{
+    top: 35%;
+    font-size: 18px;
+    font-weight: 500 ;
+    color: rgb(224, 30, 54);
+}
+
+#four{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#four > .box{
+    width: 90%;
+    height: 40%;
+    background-color: red;
+    position: absolute;
+    z-index: 2
+}
+#four > .bg1{
+    left: 5%;
+    top: 5%;
+    background: url(../img/1.jpg) center center no-repeat;
+    background-size: contain;
+}
+#four > .bg2{
+    left: 5%;
+    bottom: 5%;
+    background: url(../img/3.jpg) center center no-repeat;
+    background-size: contain;
+}
+#four > .art1{
+    font-family:"微软雅黑";
+    color: black;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 16px;
+    position: absolute;
+    z-index: 3;
+}
+#five{
+    position: relative;
+}
+#five > .box{
+    width: 90%;
+    height: 40%;
+    background-color: red;
+    position: absolute;
+    z-index: 2
+}
+#five > .bg1{
+    left: 5%;
+    top: 5%;
+    background: url(../img/2.jpg) center center no-repeat;
+    background-size: contain;
+}
+#five > .bg2{
+    left: 5%;
+    bottom: 5%;
+    background: url(../img/4.jpg) center center no-repeat;
+    background-size: contain;
+}
+#five > .art1{
+    position: absolute;
+    z-index: 2
+}
+
+
+
+#six{
+    position: relative;
+}
+#six > .bg1{
+    position: absolute;
+    z-index: 3;
+    width: 90%;
+    top: 0;
+}
+#six > p{
+    font-family:"微软雅黑";
+    color: black;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 14px;
+    position: absolute;
+    z-index: 3;
+    position: absolute;
+
+}
+#six > .art1{
+    top: 70%;
+}
+#six > .art2{
+    top: 75%;
+}
+#six > .art3{
+    top: 80%;
+}
+#six > .art4{
+    top: 85%;
+}
+#six > .art5{
+    top: 90%;
+}
+#six > .bg1-mark{
+    position: absolute;
+    z-index: 4;
+    width: 90%;
+    top: 2%;
+}
+
